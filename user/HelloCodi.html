@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello Codi</title>
+    <style type="text/css">
+        #button, h1 { 
+        text-align: center;
+            font-family: fantasy;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Click Me</h1>
+          
+        <div id="button">
+       
+        <button onclick="playAudio()" type="button"><img src="./BeeCartoonOnly_forwebsite.jpg" length="500" width="500"></button>
+            
+        <audio id="myAudio">
+        <source src="Bee-Sound.mp3" type="audio/mpeg">
+        </audio>
+            
+        <script>
+        var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+        </script>
+            
+         </div>
+     </body>
+</html>
