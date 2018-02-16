@@ -3,7 +3,7 @@
 <head>
     <title>Magic8ball</title>
     <style type="text/css">
-        #button, h1 {
+        #button, h1, h2, #button2 {
             text-align: center;
             font-family: monospace;
         }
@@ -16,29 +16,36 @@
     </head>
 <body>
     <div>
-        <h1>Ask the magic 8 ball a question!</h1>
+        <h1>Click the Magic 8 Ball!</h1>
+    </div>
           
-        <div id="button">
+    <div id="button">
        
-        <button onclick="playAudio()" type="button"><img src="game-magic-8-ball-no-text.png"length="500" width="500"></button>
+        <button onclick="choosereply()" type="button"><img src="game-magic-8-ball-no-text.png"length="400" width="400"></button>
+        
+        <div id="button2">
+        <button>Click to enter question</button>
+            </div>
+    </div>
+    <h2 id="future">Answer Appears Here</h2>
             
         <audio id="myAudio">
         <source src="./Cha_Ching.mp3" type="audio/mpeg">
         </audio>
-            </div>
         
+       
         
         <script>
-        var x = document.getElementById("myAudio"); 
+        
 
-function playAudio() { 
-    x.play(); 
-} 
-             var = document.getElementById("future");
+
+     
+            var x = document.getElementById("myAudio"); 
+             var futre = document.getElementById("future");
             
             function choosereply(){
-                var y=Math.floor(Math.random() * 7);
-            }
+                var y = Math.floor(Math.random() * 7);
+            onclick
             
             if (y == 1){
                 futre.innerHTML = "It is Certain"
@@ -55,7 +62,20 @@ function playAudio() {
             } if (y == 6){
                 futre.innerHTML = "My sources say no"
             }
-           
+                x.play();
+                alert("Click Ok To Recieve Answer");
+                
+                var person = prompt("Please enter your name");
+
+if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+} else {
+    txt = "Hello " + person + "! How are you today?";
+}
+            }
+            
+            
+            
                     
         </script>
         </body>
