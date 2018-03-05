@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magic8ball</title>
+    <style type="text/css">
+        #button, h1, h2, #button2 {
+            text-align: center;
+            font-family: monospace;
+        }
+        
+        
+        
+    
+    
+    </style>
+    
+    
+    </head>
+<body>
+    <div>
+        <h1>Click the Magic 8 Ball!</h1>
+    </div>
+          
+    <div id="button">
+       
+        <button onclick="choosereply()" type="button"><img src="game-magic-8-ball-no-text.png"length="400" width="400"></button>
+        
+        <div id="button2">
+        <button onclick="inputbox()">Click to enter question</button>
+            </div>
+    </div>
+    <h2 id="future">Answer Appears Here</h2>
+            
+        <audio id="myAudio">
+        <source src="./Cha_Ching.mp3" type="audio/mpeg">
+        </audio>
+        
+       
+        
+        <script>
+        
+            var x = document.getElementById("myAudio"); 
+             var futre = document.getElementById("future");
+            
+            function choosereply(){
+                var y = Math.floor(Math.random() * 7);
+            
+            if (y == 1){
+                futre.innerHTML = "It is Certain"
+            } if (y == 2){
+                futre.innerHTML = "Without a doubt"
+            } if (y == 2){
+                futre.innerHTML = "Outlook not so good"
+            } if (y == 3){
+                futre.innerHTML = "As I see it, yes"
+            } if (y == 4){
+                futre.innerHTML = "Reply Hazy try again"
+            } if (y == 5){
+                futre.innerHTML = "Dont count on it"
+            } if (y == 6){
+                futre.innerHTML = "My sources say no"
+            }
+                x.play();
+                alert("Click ok To Recieve Answer");
+            }
+            
+            function inputbox(){
+                var question = prompt("Enter Question");
+                 
+                var y = Math.floor(Math.random() * 7);
+            
+            if (y == 1){
+                futre.innerHTML = "It is Certain"
+            } if (y == 2){
+                futre.innerHTML = "Without a doubt"
+            } if (y == 2){
+                futre.innerHTML = "Outlook not so good"
+            } if (y == 3){
+                futre.innerHTML = "As I see it, yes"
+            } if (y == 4){
+                futre.innerHTML = "Reply Hazy try again"
+            } if (y == 5){
+                futre.innerHTML = "Dont count on it"
+            } if (y == 6){
+                futre.innerHTML = "My sources say no"
+            }
+                x.play();
+                
+                
+
+            }
+            
+  
+            
+            
+            
+                    
+        </script>
+        </body>
+</html>
